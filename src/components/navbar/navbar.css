@@ -1,0 +1,144 @@
+.onesite__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+}
+
+.onesite__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.onesite__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.onesite__navbar-links_logo img{
+    width: 182px;
+    height: 52px;
+}
+
+.onesite__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: auto;
+    align-items: center;
+}
+
+.onesite__navbar-login,
+.onesite__navbar-menu_container-links-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 2px solid var(--color-accent);
+    border-radius: 14px;
+}
+
+.onesite__navbar-links_container p,
+.onesite__navbar-login p,
+.onesite__navbar-menu_container p {
+    color: #110229;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    text-transform: uppercase;
+
+    margin: 0 2rem;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+}
+
+.onesite__navbar-login button,
+.onesite__navbar-menu_container-links-login button,
+.onesite__navbar-menu_container button{
+    color: var(--color-accent);
+    margin: 0.5rem 1.5rem;
+    background: transparent;
+    font-size: 18px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    line-height: 36px;
+    border: none;
+
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+}
+
+.onesite__navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.onesite__navbar-menu img {
+    cursor: pointer;
+}
+
+.onesite__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background-color: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.onesite__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.onesite__navbar-links_container-links,
+.onesite__navbar-menu_container-links-login {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .onesite__navbar-links_container{
+        display: none;
+    }
+
+    .onesite__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .onesite__navbar{
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .onesite__navbar{
+        padding: 2rem;
+    }
+
+    .onesite__navbar-login{
+        display: none;
+    }
+
+    .onesite__navbar-menu_container {
+        top: 20px;
+    }
+
+    .onesite__navbar-menu_container-links-login {
+        display: block;
+    }
+}
