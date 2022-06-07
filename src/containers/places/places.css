@@ -1,0 +1,32 @@
+.onesite__places {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 2rem 6rem
+}
+.onesite__place-header h1{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    text-align: center;
+    color: var(--color-text);
+}
+.onesite__places-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4rem 0rem;
+}
+
+.onesite__places-container *{
+    margin-left: 1rem;
+}
