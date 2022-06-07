@@ -140,5 +140,6 @@
 
     .onesite__navbar-menu_container-links-login {
         display: block;
+        text-align: center;
     }
 }

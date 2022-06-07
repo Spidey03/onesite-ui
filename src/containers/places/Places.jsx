@@ -11,7 +11,7 @@ const Places = () => {
   return (
     <div className='onesite__places'>
       <div className='onesite__place-header'>
-        <h1>We are available in many <br />well known countries</h1>
+        <h1>We are available in many well known countries</h1>
       </div>
       <div className='onesite__places-container'>
         <Place imgURL={america} country='America'/>
