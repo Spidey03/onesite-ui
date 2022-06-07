@@ -1,0 +1,43 @@
+.onesite__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10rem;
+}
+
+.onesite__header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    position: absolute;
+    left: 230px;
+    top: 330px;
+}
+
+.onesite__header-content *{
+    margin-top: 3rem;
+}
+
+.onesite__header-content h1{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 73px;
+    
+    max-lines: 2;
+    color: var(--color-text);
+}
+
+.onesite__header-content p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: var(--color-text);
+}
+
+.onesite__header-image img{
+    width: 125%;
+}
