@@ -1,11 +1,18 @@
 import React from 'react'
 
-import { Brand, CTA, Navbar, Place, ProjectCard } from './components'
+import { Header, Places, Projects, Footer } from './containers';
+import { CTA, Navbar } from './components';
+import './App.css';
 
 const App = () => {
   return (
-    <div>
-        
+    <div className='App'>
+        <Navbar />
+        <Header />
+        <Places />
+        <Projects />
+        <CTA />
+        <Footer />
     </div>
   )
 }
