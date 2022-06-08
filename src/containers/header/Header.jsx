@@ -9,7 +9,7 @@ const Header = () => {
     <div className='onesite__header' id="home">
 
       <div className='onesite__header-content'>
-        <h1>Easy way to find a <br />perfect property</h1>
+        <h1>Easy way to find a perfect property</h1>
         <p>{description}</p>
       </div>
       <div className='onesite__header-image'>

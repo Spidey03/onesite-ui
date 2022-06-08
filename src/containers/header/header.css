@@ -27,6 +27,7 @@
     line-height: 73px;
     
     max-lines: 2;
+    max-width: 70%;
     color: var(--color-text);
 }
 
@@ -66,19 +67,56 @@
         align-items: center;
         justify-content: flex-start;
     }
+
+    .onesite__header-image img {
+        min-width: 758px;
+        object-fit: scale-down;
+        object-position: top center;
+
+    }
+
+    .onesite__header-content {
+        position: absolute;
+        left: 15%;
+        top: 25%;
+    }
+    .onesite__header-content h1, p{
+        font-size: 40px;
+        max-lines: 1;
+        max-width: 100%;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .onesite__header{
+        padding: 2rem;
+    }
+    .onesite__header-image img {
+        min-width: 320px;
+        object-fit: scale-down;
+        object-position: top center;
+
+    }
+
     .onesite__header-content {
         position: static;
+        justify-content: flex-start;
     }
+
     .onesite__header-content h1{
-        max-width: max-content;
-        font-size: 48px;
-        line-height: 60px;
+        font-size: 30px;
+        max-lines: 1;
+        max-width: 100%;
+        line-height: 1.2;
+        margin-bottom: 1rem;
     }
-    .onesite__header-content p{
+    .onesite__header-content p {
         font-size: 16px;
-        line-height: 24px;
-    }
-    .onesite__header-image img{
-        height: 100%;
+        max-width: 100%;
+        order: 4;
+        line-height: 1.2;
+        display: none   ;
+
     }
 }
