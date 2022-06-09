@@ -17,10 +17,10 @@ const projectInfo = {
 const Projects = () => {
   return (
     <div className='onesite__projects' id="properties">
-      <div className='onesite__projects-header'>
+      {/* <div className='onesite__projects-header'>
         <h1>Recently Added</h1>
         <p>See all</p>
-      </div>
+      </div> */}
       <div className='onesite__projects-container'>      
         <ProjectCard projectInfo={projectInfo}/>
         <ProjectCard projectInfo={projectInfo}/>
