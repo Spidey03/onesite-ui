@@ -1,19 +1,24 @@
-.onesite__place{
-    display: block;
+.onesite__place {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.onesite__place-img{
-    width: 100%;
+.onesite__place-img img {
+    display: inline;
+    border-radius: 45px;
+    margin: none;
+    padding: none;
+    width: 90%;
 }
 
-.onesite__place h2{
-    position: relative;
-    top: -24rem;
-    left: 5rem;
-
+.onesite__place h2 {
+    display: inline;
     font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 28px;
     line-height: 31px;
     display: flex;
     align-items: center;
@@ -21,6 +26,19 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--color-text);
-
     max-width: fit-content;
+
+    position: relative;
+    top: 15%;
+}
+
+@media screen and (max-width: 778px){
+
+    .onesite__place h2 {
+        font-size: 18px;
+    }
+
+    .onesite__place-img img {
+        border-radius: 11px;
+    }
 }

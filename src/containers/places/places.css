@@ -4,9 +4,10 @@
     justify-content: flex-start;
     align-items: center;
 
-    padding: 2rem 6rem
+    padding: 2rem 6rem;
 }
-.onesite__place-header h1{
+
+.onesite__places-header h1{
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 38px;
@@ -15,22 +16,28 @@
     align-items: center;
     text-align: center;
     max-width: max-content;
+    margin: none;
 
     text-align: center;
     color: var(--color-text);
 }
+
 .onesite__places-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    margin-top: 4rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
 }
 
 .onesite__places-container div{
-    margin-left: 1rem;
+    margin-left: 0rem;
 }
 
 @media screen and (max-width: 1500px) {
+    .onesite__places {
+        padding: 0;
+        margin: 0;
+    }
+
     .onesite__places-container {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -38,18 +45,23 @@
 
 @media screen and (max-width: 1200px) {
     .onesite__places-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .onesite__places-container div{
-        margin-left: 2rem;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (max-width: 778px) {
-    .onesite__places-container {
-        grid-template-columns: repeat(1, 1fr);
+
+    .onesite__places-header h1{
+        font-size: 30px;
+        max-lines: 1;
+        max-width: 100%;
+        line-height: 1.2;
+        margin-top: 1rem;
+        text-align: center;
     }
-    .onesite__places-container div{
-        margin: 0rem;
+
+    .onesite__places-container {
+        margin-left: auto;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
