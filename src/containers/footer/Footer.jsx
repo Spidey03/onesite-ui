@@ -37,6 +37,7 @@ const Footer = () => {
         <p>Subscribe to get latest property, blog, news from us</p>
         <input type="email" placeholder='Email Address'></input>
       </div>
+      <p className="copywrite">© 2022 . All rights reserved.</p>
     </div>
   )
 }

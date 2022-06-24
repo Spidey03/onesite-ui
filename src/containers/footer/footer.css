@@ -86,3 +86,73 @@
     border-radius: 1rem;
     border: 1px solid var(--color-subtext);
 }
+
+.copywrite{
+    display: none;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext);
+    font-family: var(--font-family);
+}
+
+@media screen and (max-width: 1200px) {
+    .onesite__footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .onesite__footer-details{
+        grid-column: 1 / 4;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+    }
+
+    .onesite__footer-details p:last-child{
+        display: none;
+    }
+
+    .copywrite {
+        display: block;
+        grid-column: 1/4;
+
+    }
+
+    .onesite__footer-tour h4,
+    .onesite__footer-about h4,
+    .onesite__footer-subscribe h4{
+        font-size: 22px;
+    }
+
+    .onesite__footer-details p,
+    .onesite__footer-subscribe p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .onesite__footer-tour p,
+    .onesite__footer-about p{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    .onesite__footer {  
+        padding: 2rem 2rem;
+    }
+
+    .onesite__footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .onesite__footer-tour h4,
+    .onesite__footer-about h4,
+    .onesite__footer-subscribe h4{
+        font-size: 20px;
+    }
+
+    .onesite__footer-tour p,
+    .onesite__footer-about p {
+        font-size: 16px;
+    }
+}
