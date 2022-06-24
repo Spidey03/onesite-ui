@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './navbar.css';
 import logo from '../../assets/1site.svg'; 
+import Logo from '../logo/Logo';
 
 const Menu = () => (
   <>
@@ -18,9 +19,7 @@ const Navbar = () => {
   return (
     <div className='onesite__navbar'>
       <div className='onesite__navbar-links'>
-        <div className='onesite__navbar-links_logo'>
-          <img src={logo} alt='logo'/>
-        </div>
+        <Logo />
         <div className='onesite__navbar-links_container'>
           <Menu/>
         </div>

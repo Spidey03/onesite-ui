@@ -3,3 +3,4 @@ export { default as CTA } from './cta/CTA';
 export { default as Navbar } from './navbar/Navbar';
 export { default as Place } from './place/Place';
 export { default as ProjectCard } from './project_card/ProjectCard';
+export { default as Logo } from './logo/Logo';

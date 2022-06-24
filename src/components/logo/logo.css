@@ -1,0 +1,22 @@
+
+.onesite__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.onesite__navbar-links_logo img{
+    width: 180px;
+    height: auto;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .onesite__navbar-links_logo img{
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .onesite__navbar-links_logo img{
+        width: 100px;
+    }
+}
