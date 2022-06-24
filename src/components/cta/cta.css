@@ -99,6 +99,7 @@
         flex-direction: column;
         margin: 2rem 1rem;
         padding: 1rem 1rem;
+        border-radius: 0.8rem;
     }
 
     .onesite__cta-content p{
