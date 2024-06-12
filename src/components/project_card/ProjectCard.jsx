@@ -3,7 +3,7 @@ import './project_card.css';
 
 const ProjectCard = ({projectInfo}) => {
   return (
-    <div className='onesite__project_card'>
+    <div className='onesite__project_card' key={projectInfo.id}>
       <div className='onesite__project_card-img'>
         <img src={projectInfo.imgURL} alt='project' />
       </div>
